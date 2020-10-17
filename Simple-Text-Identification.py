@@ -49,7 +49,6 @@ def setCursorPosBR():  # Bottom Right
 def writeText():
     # picT = pytesseract.image_to_string(Image.open('Unbenannt2.PNG'))
     picT = pytesseract.image_to_string(imageGrab())
-    print(picT)
     keyboard.press_and_release('backspace')
     if picT == "":
         print("Kein Text erkannt.")
